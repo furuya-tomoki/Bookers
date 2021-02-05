@@ -13,8 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
-
 body {
   background-color: #fff;
   color: #333;
@@ -44,7 +42,7 @@ td {
   padding-right:5px
 }
 
-div.field,div.actions {
+  div.field,div.actions {
   margin-bottom:10px
 }
 
