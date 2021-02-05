@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+ <html>
   <head>
-    <title>Bookers</title>
+    <title>WebCampBackendNew</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+ <header>
+    <% if flash[:notice]%>
+    <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+  <header>
 
   <body>
     <%= yield %>
   </body>
-</html>
+  </html>
